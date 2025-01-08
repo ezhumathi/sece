@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Newspaper</title>
+  <style>
+    /* General styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f9;
+    }
+
+    /* Sticky Navigation Bar */
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: #333;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header Section */
+    header {
+      text-align: center;
+      background-color: #ff6f61;
+      color: white;
+      padding: 2rem 1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin: 0.5rem 0 0;
+    }
+
+    /* Subtopics Sections */
+    .section {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .section-header {
+      position: sticky;
+      top: 60px; /* Adjust based on the height of the navbar */
+      background-color: #f8f9fa;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-bottom: 2px solid #333;
+      font-weight: bold;
+      z-index: 999;
+    }
+
+    .section-content {
+      padding: 1.5rem;
+      font-size: 1.1rem;
+    }
+
+    .section-content p {
+      margin-bottom: 1rem;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      background: #333;
+      color: white;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sticky Navigation Bar -->
+  <nav>
+    <a href="#world">World</a>
+    <a href="#politics">Politics</a>
+    <a href="#tech">Technology</a>
+    <a href="#sports">Sports</a>
+    <a href="#entertainment">Entertainment</a>
+  </nav>
+
+  <!-- Header Section -->
+  <header>
+    <h1>The Daily News</h1>
+    <p>Your Trusted Source for Latest Updates</p>
+  </header>
+
+  <!-- Subtopics Sections -->
+  <div id="world" class="section">
+    <div class="section-header">World News</div>
+    <div class="section-content">
+      <p>
+        Global news is brimming with stories of resilience and innovation. From advancements in climate action to global economic updates, this section brings you the latest.
+      </p>
+      <p>
+        Countries across the globe are adapting to new challenges as they emerge in the post-pandemic era.
+      </p>
+    </div>
+  </div>
+
+  <div id="politics" class="section">
+    <div class="section-header">Politics</div>
+    <div class="section-content">
+      <p>
+        Political landscapes are shifting rapidly as governments tackle global crises. Elections, reforms, and new leaderships are shaping the future.
+      </p>
+      <p>
+        Stay informed with the latest updates from around the world, covering major policies and political debates.
+      </p>
+    </div>
+  </div>
+
+  <div id="tech" class="section">
+    <div class="section-header">Technology</div>
+    <div class="section-content">
+      <p>
+        From artificial intelligence to space exploration, technology continues to redefine the boundaries of human capability.
+      </p>
+      <p>
+        In this section, explore the latest innovations, startups, and breakthroughs that are changing our world.
+      </p>
+    </div>
+  </div>
+
+  <div id="sports" class="section">
+    <div class="section-header">Sports</div>
+    <div class="section-content">
+      <p>
+        Stay updated with the latest scores, highlights, and breaking news in the world of sports. From football to tennis, this section covers it all.
+      </p>
+      <p>
+        Major tournaments and events are bringing fans together like never before.
+      </p>
+    </div>
+  </div>
+
+  <div id="entertainment" class="section">
+    <div class="section-header">Entertainment</div>
+    <div class="section-content">
+      <p>
+        Dive into the world of movies, music, and pop culture. From celebrity interviews to box office hits, entertainment news keeps you in the loop.
+      </p>
+      <p>
+        Discover what's trending in the industry and the stories behind the scenes.
+      </p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 The Daily News. All rights reserved.</p>
+  </footer>
+</body>
+</html>

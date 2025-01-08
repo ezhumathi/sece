@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix N Logo</title>
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+}
+
+.netflix-logo {
+    position: relative;
+    width: 120px;
+    height: 200px;
+}
+
+.left-bar,
+.right-bar,
+.diagonal-bar {
+    position: absolute;
+    background: red;
+}
+
+.left-bar {
+    width: 40px;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+}
+
+.right-bar {
+    width: 40px;
+    height: 100%;
+    right: 0;
+    border-radius: 0 20px 20px 0;
+}
+
+.diagonal-bar {
+    width: 40px;
+    height: 100%;
+    background: linear-gradient(to bottom right, red 0%, red 50%, black 50%, black 100%);
+    transform: skewX(-25deg);
+    left: 20px;
+    z-index: 1;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="netflix-logo">
+        <div class="left-bar"></div>
+        <div class="diagonal-bar"></div>
+        <div class="right-bar"></div>
+    </div>
+</body>
+</html>
